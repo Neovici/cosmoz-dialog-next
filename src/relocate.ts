@@ -8,7 +8,7 @@ const defaultLimit = (bounds: DOMRect, x: number, y: number) => {
 
 export default (
 		el: HTMLElement,
-		handle: string,
+		handle?: string,
 		limit?: (bounds: DOMRect, x: number, y: number) => { x: number; y: number },
 		up?: (e: MouseEvent) => void,
 	) =>
