@@ -1,12 +1,12 @@
-import { component, html, ComponentOptions } from '@pionjs/pion';
-import { when } from 'lit-html/directives/when.js';
+import { clearIcon } from '@neovici/cosmoz-icons';
 import { useHost } from '@neovici/cosmoz-utils/hooks/use-host';
+import { component, ComponentOptions, html } from '@pionjs/pion';
+import { when } from 'lit-html/directives/when.js';
 import styles from './style.css';
+import { DialogElement, Props } from './types';
 import useClose from './use-close';
-import useMove from './use-move';
 import useFocus from './use-focus';
-import { Props, DialogElement } from './types';
-import { clearIcon } from '../cz-icon/clear.js';
+import useMove from './use-move';
 
 export type { Props };
 export const useDialog = () => {
