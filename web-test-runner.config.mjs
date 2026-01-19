@@ -6,7 +6,7 @@ export default {
 	files: 'src/**/*.test.ts',
 	plugins: [esbuildPlugin({ ts: true, target: 'auto' })],
 	browsers: [playwrightLauncher({ product: 'chromium' })],
-	testFramework: { config: { ui: 'tdd' } },
+	testFramework: { config: { ui: 'bdd' } },
 	coverage: true,
 	coverageConfig: {
 		include: ['src/**/*.ts'],
