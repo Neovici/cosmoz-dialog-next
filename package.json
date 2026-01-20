@@ -8,13 +8,13 @@
     "pion",
     "lit-html"
   ],
-  "homepage": "https://github.com/neovici/cosmoz-dialog-next#readme",
+  "homepage": "https://github.com/Neovici/cosmoz-dialog-next#readme",
   "bugs": {
-    "url": "https://github.com/neovici/cosmoz-dialog-next/issues"
+    "url": "https://github.com/Neovici/cosmoz-dialog-next/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neovici/cosmoz-dialog-next.git"
+    "url": "https://github.com/Neovici/cosmoz-dialog-next"
   },
   "license": "Apache-2.0",
   "author": "",
