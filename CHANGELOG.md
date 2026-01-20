@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Neovici/cosmoz-dialog-next/compare/v1.1.0...v1.1.1) (2026-01-20)
+
+### Bug Fixes
+
+* correct repository URL capitalization for npm provenance validation ([9dd328a](https://github.com/Neovici/cosmoz-dialog-next/commit/9dd328a11af210b2e30f49c398aa6f91adffdcc2))
+
 ## [1.1.0](https://github.com/neovici/cosmoz-dialog-next/compare/v1.0.0...v1.1.0) (2026-01-20)
 
 ### Features
