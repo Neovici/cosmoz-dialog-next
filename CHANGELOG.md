@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/Neovici/cosmoz-dialog-next/compare/v1.2.0...v1.3.0) (2026-01-20)
+
+### Features
+
+* export correct types ([54a0e7c](https://github.com/Neovici/cosmoz-dialog-next/commit/54a0e7cddd9a792c0daa64ea6ba640635ee14286))
+
 ## [1.2.0](https://github.com/Neovici/cosmoz-dialog-next/compare/v1.1.1...v1.2.0) (2026-01-20)
 
 ### Features
