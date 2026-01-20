@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/Neovici/cosmoz-dialog-next/compare/v1.1.1...v1.2.0) (2026-01-20)
+
+### Features
+
+* export relocate and use-close ([71f0d6b](https://github.com/Neovici/cosmoz-dialog-next/commit/71f0d6b0a23c225c083ba9bc71d8e6960ab3a9f3))
+
 ## [1.1.1](https://github.com/Neovici/cosmoz-dialog-next/compare/v1.1.0...v1.1.1) (2026-01-20)
 
 ### Bug Fixes
