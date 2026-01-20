@@ -56,10 +56,22 @@
     "types"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./loading": "./dist/loading.js",
-    "./use-close": "./dist/use-close.js",
-    "./relocate": "./dist/relocate.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./loading": {
+      "types": "./dist/loading.d.ts",
+      "default": "./dist/loading.js"
+    },
+    "./use-close": {
+      "types": "./dist/use-close.d.ts",
+      "default": "./dist/use-close.js"
+    },
+    "./relocate": {
+      "types": "./dist/relocate.d.ts",
+      "default": "./dist/relocate.js"
+    }
   },
   "dependencies": {
     "@neovici/cosmoz-icons": "^1.3.0",
