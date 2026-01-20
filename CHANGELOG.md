@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/neovici/cosmoz-dialog-next/compare/v1.0.0...v1.1.0) (2026-01-20)
+
+### Features
+
+* add loading module export ([f7e3588](https://github.com/neovici/cosmoz-dialog-next/commit/f7e3588d66f1e3434ff381299625950f44eb7466))
+
 ## 1.0.0 (2026-01-19)
 
 ### Features
