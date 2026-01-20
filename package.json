@@ -56,7 +56,8 @@
     "types"
   ],
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./loading": "./dist/loading.js"
   },
   "dependencies": {
     "@neovici/cosmoz-icons": "^1.3.0",
