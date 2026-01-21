@@ -1,4 +1,4 @@
-import { assert } from '@open-wc/testing';
+import { aTimeout, assert } from '@open-wc/testing';
 import { component } from '@pionjs/pion';
 import { html } from 'lit-html';
 import { assert as sinonAssert, spy } from 'sinon';
@@ -23,7 +23,7 @@ describe('use-focus', () => {
 		) as TestFocusDialogElement;
 		const focusSpy = spy(el, 'focus');
 		document.body.appendChild(el);
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		sinonAssert.calledOnce(focusSpy);
 		el.remove();
 	});
@@ -35,7 +35,7 @@ describe('use-focus', () => {
 		el.manualFocus = true;
 		const focusSpy = spy(el, 'focus');
 		document.body.appendChild(el);
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		sinonAssert.notCalled(focusSpy);
 		el.remove();
 	});
@@ -46,12 +46,12 @@ describe('use-focus', () => {
 		) as TestFocusDialogElement;
 		el.manualFocus = true;
 		document.body.appendChild(el);
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		const childButton = el.shadowRoot?.querySelector('.child') as HTMLElement;
 		childButton.focus();
 		const focusSpy = spy(el, 'focus');
 		el.manualFocus = false;
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		sinonAssert.notCalled(focusSpy);
 		el.remove();
 	});
@@ -61,7 +61,7 @@ describe('use-focus', () => {
 			'test-focus-dialog',
 		) as TestFocusDialogElement;
 		document.body.appendChild(el);
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		const tabindex = el.getAttribute('tabindex');
 		assert.isNull(tabindex);
 		el.remove();

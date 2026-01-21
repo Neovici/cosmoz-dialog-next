@@ -1,4 +1,4 @@
-import { fixture } from '@open-wc/testing';
+import { aTimeout, fixture } from '@open-wc/testing';
 import { component } from '@pionjs/pion';
 import { html } from 'lit-html';
 import type { DialogElement } from '../types';
@@ -45,7 +45,7 @@ describe('use-move', () => {
 			<test-move-dialog .unmovable=${true}></test-move-dialog>
 		`)) as TestMoveDialogElement;
 		el.unmovable = false;
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		const title = el.shadowRoot?.querySelector('.title') as HTMLElement;
 		title.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
 	});
@@ -55,10 +55,10 @@ describe('use-move', () => {
 			<test-move-dialog></test-move-dialog>
 		`)) as TestMoveDialogElement;
 		el.unmovable = true;
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		el.unmovable = false;
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 		el.unmovable = true;
-		await new Promise((resolve) => setTimeout(resolve, 0));
+		await aTimeout(0);
 	});
 });
