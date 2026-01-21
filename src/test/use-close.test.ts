@@ -5,6 +5,10 @@ import { assert as sinonAssert, spy } from 'sinon';
 import type { DialogElement } from '../types';
 import useClose from '../use-close';
 
+// Note: Tests use a component wrapper because renderHook from @neovici/testing
+// doesn't expose a host element that useHost() can access.
+// See: https://github.com/Neovici/testing/issues/4
+
 const TestCloseDialog = () =>
 	component<DialogElement & { closeFn?: () => void }>((host) => {
 		const { close } = useClose();
