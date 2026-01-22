@@ -85,7 +85,7 @@
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/eslintrc": "^2.0.0",
     "@neovici/cfg": "^2.0.0",
-    "@neovici/testing": "^2.0.0",
+    "@neovici/testing": "^2.1.1",
     "@open-wc/testing": "^4.0.0",
     "@open-wc/testing-helpers": "^3.0.1",
     "@semantic-release/changelog": "^6.0.0",
